@@ -3,7 +3,6 @@ body{
     font-family:'Raleway', 'sans-serif';
     font-size:1rem;
     color:#f3f3f3;
-
 }
 /*body::before es un hijo, que hereda las caracteristicas del padre (body)
 pero que se situa ANTES de body. hereda el tamaño del mismo*/
@@ -22,7 +21,7 @@ body::before{
     background-image: linear-gradient(
       115deg,
       rgba(81, 30, 30, 0.8),
-      rgba(96, 132, 99, 0.7)
+      rgba(113, 190, 120, 0.7)
     ), url(background.jpg);
     /*que tamaño va a tomar, si ingreso solo un valor asume que aplica
     a los dos. con cover lo que hacemos es decirle al navegador 
@@ -32,33 +31,106 @@ body::before{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-h1, p {
-    margin: 0.5em auto;
-    text-align: center;
-    
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
-form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-    font-size: 0.8em;
-    background-color: rgba(49, 25, 25, 0.7)
 }
-fieldset {
-    border: none;
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+/* formato del titulo y parrafos*/
+h1{
+  font-size: 3rem;
+}
+p{
+  font-size:1.25rem;
+}
+h1, p{ 
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.header{
+  margin-top:0;
+  margin-bottom:2rem;
+}
+.p-titles{
+  padding-top:1rem;
+}
+form {
+  margin: 0 auto;
+  padding-bottom: 2em;
+  padding-right: 2.5rem;
+  padding-left: 2rem; 
+  padding-top: 2rem;
+  font-size: 1em;
+  background-color: rgba(49, 25, 25, 0.7);
+  border-radius: 0.25rem;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 0 0 0 0;
+  width: 100%;
+  min-height: 1em;
+}
+
+.input-checkbox, .input-radio{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input,
+textarea,
+select {
+  margin: 0 0 0 0;
+  height:2em;
+  width: 100%;
+  min-height: 1em;
+}
+.text-comentarios {
+  min-height: 120px;
+  width:99%;
+  resize: vertical;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(113, 190, 120, 0.7);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
 }
 /* hago que todos los label sean blockline, así estan uno debajo del otro*/
-label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  input,
-  textarea,
-  select {
-    margin: 0 0 0 0;
-    width: 100%;
-    min-height: 1em;
-  }
+
+/*
+input,
+textarea,
+select {
+  margin: 0 0 0 0;
+  width: 100%;
+  min-height: 1em;
+}
+input[type="checkbox"]
+{
+    vertical-align:middle;
+}
+*/

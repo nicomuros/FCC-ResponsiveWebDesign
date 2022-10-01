@@ -8,26 +8,52 @@
 </head>
 <body>
 
-     
-    <h1 id="title" class="header-title">Experimental Beer Survey</h1>
-    <p id="description" class="header-paragraph">
-        Gracias por ayudarnos a encontrar la próxima gran birra!
-    </p>  
-    <form id="survey-form">
-        <fieldset>
-
+    <div class="container">
+        <div class="header">
+            <h1 id="title" class="header-title">Experimental Beer Survey</h1>
+            <p id="description" class="header-paragraph">
+                Gracias por ayudarnos a encontrar la próxima gran birra!
+            </p>  
+        </div>
+        <form id="survey-form">
             <label id="name-label" for="name">Nombre</label>
             <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
-
             <label id="email-label" for="email">Correo</label>
-            <input type="text" name="email" id="email" placeholder="Ingresa tu correo electrónico" required>
-
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required>
             <label id="age-label" for="age">Edad</label>
             <input type="number" name="age" id="age" min="18" max="120" placeholder="Ingresa tu edad" required>
+        
+            <p class="p-titles">¿Que te gustó de la experiencia ExperimentalBeer?</p>
+            
+            <label><input type="checkbox" name="caracteristicas" value="aroma" class="input-checkbox">Aroma</label>
+            <label><input type="checkbox" name="caracteristicas" value="amargor" class="input-checkbox">Amargor</label>
+            <label><input type="checkbox" name="caracteristicas" value="textura-en-boca" class="input-checkbox">Textura en la boca</label>
+            <label><input type="checkbox" name="caracteristicas" value="color" class="input-checkbox">Color</label>
+            <label><input type="checkbox" name="caracteristicas" value="transparencia" class="input-checkbox">Transparencia</label>
+            <label><input type="checkbox" name="caracteristicas" value="maltosidad" class="input-checkbox">Maltosidad</label>
 
-            </div>
-        </fieldset>
-    </form>
+            <p class="p-titles">¿Que tipo de cerveza te gusta más?</p>
+            <label><input type="radio" name="tipo-cerveza" value="lupulada" class="input-radio">Lupulada</label>
+            <label><input type="radio" name="tipo-cerveza" value="maltosa" class="input-radio">Maltosa</label>
+            <label><input type="radio" name="tipo-cerveza" value="suave" class="input-radio">Suave</label>
 
+            <label for="presentacion">¿Que presentación preferis?
+                <select id="presentacion" name="presentacion">
+                  <option value="">(selecciona una)</option>
+                  <option value="1">Tirada</option>
+                  <option value="2">Botella de 1 litro</option>
+                  <option value="3">Botella de 0.5 litros</option>
+                  <option value="4">Lata</option>
+                </select>
+              </label>
+              <label for="comentarios">Dejanos un comentario para seguir mejorando:
+                <textarea class="text-comentarios" id="comentarios" name="comentarios" rows="3" cols="30" placeholder="Me gustaría que la cerveza fuera gratis..."></textarea>
+              </label>
+            <button type="submit" id="submit" class="submit-button">
+                Enviar
+            </button>
+
+        </form>
+    </div>
 </body>
 </html>
