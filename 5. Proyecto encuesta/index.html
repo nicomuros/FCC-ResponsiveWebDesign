@@ -20,8 +20,8 @@
             <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
             <label id="email-label" for="email">Correo</label>
             <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required>
-            <label id="age-label" for="age">Edad</label>
-            <input type="number" name="age" id="age" min="18" max="120" placeholder="Ingresa tu edad" required>
+            <label id="number-label" for="age">Edad</label>
+            <input type="number" name="age" id="number" min="18" max="120" placeholder="Ingresa tu edad" required>
         
             <p class="p-titles">¿Que te gustó de la experiencia ExperimentalBeer?</p>
             
@@ -37,16 +37,16 @@
             <label><input type="radio" name="tipo-cerveza" value="maltosa" class="input-radio">Maltosa</label>
             <label><input type="radio" name="tipo-cerveza" value="suave" class="input-radio">Suave</label>
 
-            <label for="presentacion">¿Que presentación preferis?
-                <select id="presentacion" name="presentacion">
-                  <option value="">(selecciona una)</option>
-                  <option value="1">Tirada</option>
-                  <option value="2">Botella de 1 litro</option>
-                  <option value="3">Botella de 0.5 litros</option>
-                  <option value="4">Lata</option>
-                </select>
-              </label>
-              <label for="comentarios">Dejanos un comentario para seguir mejorando:
+            <p class="p-titles">¿Que presentación preferis?</p>
+            <select id="dropdown" name="presentacion">
+                <option value="">(selecciona una)</option>
+                <option value="1">Tirada</option>
+                <option value="2">Botella de 1 litro</option>
+                <option value="3">Botella de 0.5 litros</option>
+                <option value="4">Lata</option>
+            </select>
+           
+              <label for="comentarios" id="label-comentarios">Dejanos un comentario para seguir mejorando:
                 <textarea class="text-comentarios" id="comentarios" name="comentarios" rows="3" cols="30" placeholder="Me gustaría que la cerveza fuera gratis..."></textarea>
               </label>
             <button type="submit" id="submit" class="submit-button">
