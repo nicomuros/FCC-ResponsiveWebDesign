@@ -1,0 +1,7 @@
+*{  
+    font-family: 'Ubuntu Mono', monospace;
+}
+/* Tods los elementos van a verse modoficados */
+section {
+    min-height: 100vh;/*vh es el viewport-height, es decir, el alto del dispositivo. de esta forma si hago min-height:100vh, en realidad estoy haciendo que section tenga como minimo el largo minimo de la pantalla. voy a lograr que cuando el usuario baje cambie la disposición en la que se ve todo. va a ser interesante :D*/
+}
