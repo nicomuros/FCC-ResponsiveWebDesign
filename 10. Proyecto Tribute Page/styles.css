@@ -1,7 +1,29 @@
 *{  
     font-family: 'Ubuntu Mono', monospace;
+    box-sizing: border-box; /*cuando modifico las cajas (con padding por ejemplo) la caja siempre mantiene su tamaño*/
+    padding: 0;
+    margin: 0;
 }
+
 /* Tods los elementos van a verse modoficados */
+body{
+    width:100%;
+}
+.barra{
+    width:100vw;
+    height:60px;
+    background-color: red;
+
+}
+img{
+    max-width: 50%;
+    
+}
+
 section {
     min-height: 100vh;/*vh es el viewport-height, es decir, el alto del dispositivo. de esta forma si hago min-height:100vh, en realidad estoy haciendo que section tenga como minimo el largo minimo de la pantalla. voy a lograr que cuando el usuario baje cambie la disposición en la que se ve todo. va a ser interesante :D*/
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto auto;
+    text-align:center;
 }
