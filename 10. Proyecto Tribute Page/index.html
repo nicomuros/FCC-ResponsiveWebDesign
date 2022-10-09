@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/2911a39d13.js" crossorigin="anonymous"></script>
+
     <title>Linus Torvalds</title>
 </head>
 <body>
@@ -17,19 +18,20 @@
     <header class="barra">
         
         <h1 id="title">Linus Torvalds</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduccion" accesskey="i">Introducción</a></li>
-                <li><a href="#linux" accesskey="h">Linux</a></li>
-                <li><a href="#git" accesskey="l">GIT</a></li>
+        <nav class= "nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fa-solid fa-code"></i><a href="#introduccion" accesskey="i">Introducción</a></li>
+                <li class="nav__li"><i class="fa-brands fa-linux"></i><a href="#linux" accesskey="h">Linux</a></li>
+                <li class="nav__li"><i class="fa-solid fa-code-branch"></i><a href="#git" accesskey="l">Git</a></li>
             </ul>
         </nav>
+        
     </header>
     <main id="main">
         <article id="tribute-info">
             <section role="region" aria-labelledby="introduccion">
                 <div class="info">
-                    <h1 id="introduccion">Introducción</h1>
+                    <h1 id="introduccion" class="anchor">Introducción</h1>
                     <ul>
                         <li>A los 10 años comenzó a incursionar en la programación de computadoras en el Commodore VIC-20 de su abuelo. </li>
                         <li>Conocido por iniciar y mantener el desarrollo del kernel (en español, núcleo) <a href="#linux">Linux</a></li>
@@ -48,7 +50,7 @@
             </section>
             <section role="region" aria-labelledby="biografia">
                 <div class="info">
-                    <h1 id="linux">Linux</h1>
+                    <h1 id="linux" class="anchor">Linux</h1>
                     <p>Es una familia de sistemas operativos tipo Unix compuesto por software libre y de código abierto. GNU/Linux surge de las contribuciones de varios proyectos de software, entre los cuales destacan GNU (iniciado por Richard Stallman en 1983) y el kernel «Linux» (iniciado por Linus Torvalds en 1991).​</p>
                     
                     <p>A pesar de que en la jerga cotidiana la mayoría de las personas usan el vocablo «Linux» para referirse a este sistema operativo,​ en realidad ese es solo el nombre del kernel o núcleo, ya que el sistema completo está formado también por una gran cantidad de componentes del proyecto GNU junto a componentes de terceros, que van desde compiladores hasta entornos de escritorio.​ Cabe señalar que existen derivados que usan el núcleo Linux pero que no tienen componentes GNU, como por ejemplo el sistema operativo Android.8​ También existen distribuciones de software GNU donde el núcleo Linux está ausente.</p>
@@ -59,8 +61,8 @@
                 </div>
             </section>
             <section role="region" aria-labelledby="libros">
-                <div class="info"
-                    <h1 id="git">GIT</h1>
+                <div class="info"  >
+                    <h1 id="git" class="anchor">GIT</h1>
                     <p>Git es una herramienta DevOps utilizada para la gestión del código fuente. Es un sistema de control de versiones gratuito y de código abierto que se utiliza para manejar proyectos pequeños a muy grandes de manera eficiente. Git se utiliza para realizar un seguimiento de los cambios en el código fuente, lo que permite que varios desarrolladores trabajen juntos en el desarrollo no lineal. Linus Torvalds creó Git en 2005 para el desarrollo del kernel de Linux.</p>
                     <p>Git hace que este proceso sea increíblemente fácil y cambia la forma en que la mayoría de los desarrolladores trabajan cuando lo aprenden.</p>
                 <div class="img">

@@ -1,13 +1,23 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 * {
   font-family: "Ubuntu Mono", monospace;
   box-sizing: border-box; /*cuando modifico las cajas (con padding por ejemplo) la caja siempre mantiene su tamaño*/
   padding: 0;
   margin: 0;
 }
+/*
+display: inline-block; lo que hace es que el elemento sea inline, pero que podamos modificar el tamaño del bloque/*
 
 /* Tods los elementos van a verse modoficados */
 body {
   width: 100%;
+}
+i{
+  padding-right:5px;
 }
 header {
   width: 100%;
@@ -17,13 +27,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
+  position: fixed; /*con esta position queda fijo en la pantalla, aunque se scrollee va a seguir ahí*/
+  top: 0; /*heredado de position, declaro donde va a estar ubicado*/
 }
 nav {
   width: 50%;
   max-width: 300px;
   height: 60px;
+  margin-right:2git0px;
 }
 nav > ul {
   display: flex;
@@ -33,6 +44,7 @@ nav > ul {
   padding-inline-start: 0;
   margin-block: 0;
   height: 100%;
+  
 }
 nav > ul > li {
   color: #dfdfe2;
@@ -66,7 +78,10 @@ img {
   max-width: 50%;
 }
 main {
-  padding-top: 60px;
+  padding-top: 60px; /*la pagina comienza despues del header (que está fixed)*/
+}
+.anchor {
+  scroll-margin-top: 60px;
 }
 section {
   min-height: 100vh; /*vh es el viewport-height, es decir, el alto del dispositivo. de esta forma si hago min-height:100vh, en realidad estoy haciendo que section tenga como minimo el largo minimo de la pantalla. voy a lograr que cuando el usuario baje cambie la disposición en la que se ve todo. va a ser interesante :D*/
