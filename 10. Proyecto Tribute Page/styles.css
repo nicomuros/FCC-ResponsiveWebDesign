@@ -30,13 +30,14 @@ header {
   position: fixed; /*con esta position queda fijo en la pantalla, aunque se scrollee va a seguir ahí*/
   top: 0; /*heredado de position, declaro donde va a estar ubicado*/
 }
-nav {
-  width: 50%;
+.nav {
+  width: 60%;
   max-width: 300px;
   height: 60px;
-  margin-right:2git0px;
+  margin-right:10px;
 }
-nav > ul {
+
+.nav__ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -46,18 +47,64 @@ nav > ul {
   height: 100%;
   
 }
-nav > ul > li {
+.nav__li {
   color: #dfdfe2;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
 }
 
-nav > ul > li:hover {
+.nav__li:hover {
   background-color: #dfdfe2;
   color: #1b1b32;
   cursor: pointer;
 }
+
+/*menu responsive*/
+.nav__responsive{ /*oculto la versión responsive*/
+  display:none;
+}
+
+ @media only screen and (max-width: 550px){
+  .nav{
+    display: none;
+  }
+  .nav__responsive{
+    display:block;
+  }
+ }
+
+.nav__responsive {
+  width: 30%;
+  max-width: 300px;
+  height: 60px;
+  margin-right:20px;
+}
+
+.nav__responsive-ul {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  
+}
+.nav__responsive-li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+.nav__responsive-li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+/*fin menu responsive*/
+
 
 li > a {
   color: inherit;
@@ -65,13 +112,13 @@ li > a {
 }
 header > h1 {
     display:flex;
-    width: 50%;
+    width: 60%;
     max-width: 300px;
     height: 60px;
     color: #dfdfe2;
     text-align:left;
     align-items:center;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 10px;
     padding: 0.4rem;
 }
 img {
