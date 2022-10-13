@@ -15,6 +15,7 @@ display: inline-block; lo que hace es que el elemento sea inline, pero que podam
 /* Tods los elementos van a verse modoficados */
 body {
   width: 100%;
+  background-color: #dfdfe2;
 }
 i{
   padding-right:5px;
@@ -31,7 +32,6 @@ header {
   top: 0; /*heredado de position, declaro donde va a estar ubicado*/
 }
 .nav {
-  width: 60%;
   max-width: 300px;
   height: 60px;
   margin-right:10px;
@@ -71,6 +71,9 @@ header {
   }
   .nav__responsive{
     display:block;
+  }
+  header > h1{
+    width:60%;
   }
  }
 
@@ -112,7 +115,6 @@ li > a {
 }
 header > h1 {
     display:flex;
-    width: 60%;
     max-width: 300px;
     height: 60px;
     color: #dfdfe2;
@@ -121,19 +123,40 @@ header > h1 {
     margin: 0 0 0 10px;
     padding: 0.4rem;
 }
-img {
-  max-width: 50%;
-}
+
 main {
   padding-top: 60px; /*la pagina comienza despues del header (que está fixed)*/
 }
 .anchor {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 160px;
 }
-section {
-  min-height: 100vh; /*vh es el viewport-height, es decir, el alto del dispositivo. de esta forma si hago min-height:100vh, en realidad estoy haciendo que section tenga como minimo el largo minimo de la pantalla. voy a lograr que cuando el usuario baje cambie la disposición en la que se ve todo. va a ser interesante :D*/
+#tribute-info{
   max-width: 1000px;
   min-width: 400px;
-  margin: auto auto;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+section {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  margin: 50px 0;
   text-align: center;
+  background-color: #1b1b32;
+  color: #dfdfe2;
+  border-radius: 20px;
+}
+.info{
+  margin:20px;
+  max-width: 40%;
+  text-align: left;
+  text-justify: inter-word;
+}
+section > div > img{
+  max-width:500px;
+  min-width:100px;
+  width:100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
