@@ -11,7 +11,6 @@
 }
 /*
 display: inline-block; lo que hace es que el elemento sea inline, pero que podamos modificar el tamaño del bloque/*
-
 /* Tods los elementos van a verse modoficados */
 body {
   width: 100%;
@@ -23,7 +22,7 @@ i{
 header {
   width: 100%;
   height: 60px;
-  min-width:400px;
+  min-width:350px;
   background-color: #1b1b32;
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,7 @@ header {
   top: 0; /*heredado de position, declaro donde va a estar ubicado*/
 }
 .nav {
-  max-width: 300px;
+  max-width: 320px;
   height: 60px;
   margin-right:10px;
 }
@@ -74,6 +73,9 @@ header {
   }
   header > h1{
     width:60%;
+  }
+  body {
+    font-size: 12px;
   }
  }
 
@@ -138,14 +140,14 @@ main {
 }
 section {
   
-  min-width:400px;
+  min-width:350px;
   margin: 50px 0;
   background-color: #1b1b32;
   color: #dfdfe2;
   border-radius: 20px;
 }
 section > h1{
-  font-size: 30px;
+  font-size: 1.875em;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
@@ -156,8 +158,8 @@ section > h1{
 }
 
 .text{
-  margin:20px;
-  min-width:400px;
+  padding:20px;
+  min-width:350px;
   width:100%;
   flex: 2;
 }
@@ -176,6 +178,3 @@ section > h1{
   border-radius: 20px;
   margin: auto;
 }
-
-
-
